@@ -34,8 +34,8 @@ require('commandprompt').setup({
   }
 })
 -- Add a keymapping to open the command picker
-vim.api.nvim_set_keymap('n', '<Leader>g', ':lua require("gptcommands").command_picker()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<Leader>g', ':lua require("gptcommands").command_picker()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>g', ':lua require("commandprompt").command_picker()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Leader>g', ':lua require("commandprompt").command_picker()<CR>', { noremap = true, silent = true })
 ```
 
 To open the command picker, press `<Leader>g` in normal mode or `<Leader>g` in
