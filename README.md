@@ -12,7 +12,7 @@ You can install this plugin using your favorite plugin manager. For example,
 using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'renerocksai/commandprompt'
+Plug 'renerocksai/CommandPrompt.nvim'
 ```
 
 ## Usage
