@@ -38,10 +38,11 @@ local make_command_entry = function(command)
 end
 
 local command_picker = function(opts)
+  opts = opts or {}
   pickers.new(opts, {
     prompt_title = "Commands",
     finder = finders.new_table({
-      results = M.commands,
+      results = M.commands or default_commands,
       entry_maker = make_command_entry,
     }),
     sorter = sorters.get_generic_fuzzy_sorter(),
