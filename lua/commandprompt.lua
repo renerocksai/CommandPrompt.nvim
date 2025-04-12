@@ -1,5 +1,7 @@
 -- Neovim Plugin for command picker
 
+local M = {}
+
 -- Define the default commands list
 local default_commands = {
   {
