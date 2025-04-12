@@ -73,6 +73,8 @@ function M.setup(user_commands)
     M.commands = user_commands
   end
 
+  vim.print("CommandPrompt set up with these commands:")
+  vim.print(vim.inspect(M.commands))
 end
 
 function M.command_picker()
